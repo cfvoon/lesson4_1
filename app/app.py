@@ -11,5 +11,5 @@ def hello_world():
     else:
         num_A = request.form['A']
         num_B = request.form['B']
-        final_result = num_A + num_B
+        final_result = int(num_A) + int(num_B)
         return render_template('index.html', href2='A + B = '+str(final_result))
